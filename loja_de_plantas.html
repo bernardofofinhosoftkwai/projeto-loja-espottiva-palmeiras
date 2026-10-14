@@ -1,0 +1,1998 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VERDÃO STORE | Artigos Esportivos Palmeiras</title>
+
+    <meta name="description"
+          content="VERDÃO STORE - Artigos esportivos, camisas, calçados e acessórios para os apaixonados pelo Palmeiras.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="naom_63221d72978cf.webp"
+          rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #006437;
+            --primary-dark: #003d23;
+            --secondary: #071b12;
+            --green-light: #0b8f50;
+            --white: #ffffff;
+            --light: #f3f6f4;
+            --text: #59645e;
+            --gold: #d4af37;
+            --gold-light: #f3d778;
+            --shadow: 0 15px 45px rgba(0, 50, 30, .13);
+            --radius: 22px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: "Poppins", sans-serif;
+            color: var(--secondary);
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .container {
+            width: min(1120px, 92%);
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER
+        ========================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, .96);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #dce7e1;
+        }
+
+        .nav {
+            height: 78px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--secondary);
+            font-family: "Poppins";
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 13px;
+            background: linear-gradient(135deg, var(--primary), var(--green-light));
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+            box-shadow: 0 7px 20px rgba(0, 100, 55, .25);
+        }
+
+        .menu {
+            display: flex;
+            gap: 28px;
+            align-items: center;
+            list-style: none;
+        }
+
+        .menu a {
+            color: var(--secondary);
+            font-size: .92rem;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .menu a:hover {
+            color: var(--primary);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            border: 0;
+            cursor: pointer;
+            padding: 14px 23px;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            color: white !important;
+            box-shadow: 0 10px 25px rgba(0, 100, 55, .25);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 27px;
+            border: 0;
+            background: none;
+            cursor: pointer;
+            color: var(--secondary);
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 100vh;
+            padding-top: 78px;
+            display: flex;
+            align-items: center;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(3, 25, 15, .96) 0%,
+                    rgba(0, 74, 40, .82) 48%,
+                    rgba(0, 40, 23, .20) 100%
+                ),
+                url("foto1.webp")
+                center/cover;
+        }
+
+        .hero-content {
+            max-width: 720px;
+            color: white;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, .14);
+            border: 1px solid rgba(255, 255, 255, .22);
+            color: #ffffff;
+            font-size: .85rem;
+            font-weight: 700;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: clamp(2.6rem, 6vw, 5rem);
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: var(--gold-light);
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 1.1rem;
+            color: #e7f0eb;
+            margin-bottom: 32px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .btn-outline {
+            border: 1px solid rgba(255, 255, 255, .55);
+            color: white;
+            background: rgba(255, 255, 255, .08);
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--primary);
+        }
+
+        /* =========================
+           STATS
+        ========================== */
+
+        .stats {
+            margin-top: -55px;
+            position: relative;
+            z-index: 3;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            background: white;
+            box-shadow: var(--shadow);
+            border-radius: 20px;
+            padding: 28px;
+        }
+
+        .stat {
+            text-align: center;
+            border-right: 1px solid #e2e9e5;
+        }
+
+        .stat:last-child {
+            border-right: 0;
+        }
+
+        .stat strong {
+            display: block;
+            color: var(--primary);
+            font-size: 2rem;
+            font-family: "Poppins";
+        }
+
+        .stat span {
+            font-size: .88rem;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================== */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 55px;
+        }
+
+        .section-title span {
+            color: var(--primary);
+            font-size: .85rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin: 12px 0 15px;
+        }
+
+        /* =========================
+           SOBRE
+        ========================== */
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image img {
+            height: 520px;
+            object-fit: cover;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+        }
+
+        .experience {
+            position: absolute;
+            right: -25px;
+            bottom: 30px;
+            background: var(--secondary);
+            color: white;
+            padding: 22px;
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+            width: 180px;
+            text-align: center;
+        }
+
+        .experience strong {
+            display: block;
+            color: var(--gold);
+            font-size: 2rem;
+        }
+
+        .about-text h2 {
+            font-size: 2.7rem;
+            margin: 12px 0 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+        }
+
+        .checks {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .checks li {
+            margin: 12px 0;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+
+        .checks li::before {
+            content: "✓";
+            display: inline-grid;
+            place-items: center;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #e5f4ec;
+            color: var(--primary);
+            margin-right: 10px;
+        }
+
+        /* =========================
+           PRODUTOS
+        ========================== */
+
+        .services {
+            background: var(--light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            background: white;
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: 0 8px 30px rgba(0, 50, 30, .06);
+            transition: .3s;
+            border: 1px solid #dce8e1;
+        }
+
+        .service:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow);
+            border-color: #9fc5af;
+        }
+
+        .service-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 17px;
+            background: #e5f4ec;
+            display: grid;
+            place-items: center;
+            color: var(--primary);
+            font-size: 27px;
+            margin-bottom: 23px;
+        }
+
+        .service h3 {
+            margin-bottom: 12px;
+        }
+
+        .service a {
+            display: inline-block;
+            margin-top: 18px;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        /* =========================
+           GALERIA
+        ========================== */
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr .8fr;
+            grid-auto-rows: 240px;
+            gap: 16px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .gallery-item:first-child {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            height: 100%;
+            object-fit: cover;
+            transition: .5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.06);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            left: 18px;
+            bottom: 18px;
+            background: rgba(3, 25, 15, .84);
+            color: white;
+            padding: 9px 15px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: .85rem;
+        }
+
+        /* =========================
+           DIFERENCIAIS
+        ========================== */
+
+        .features {
+            background: var(--secondary);
+            color: white;
+        }
+
+        .features .section-title h2,
+        .features .section-title p {
+            color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .feature-icon {
+            font-size: 35px;
+            margin-bottom: 17px;
+        }
+
+        .feature h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #c5d5cd;
+            font-size: .9rem;
+        }
+
+        /* =========================
+           DEPOIMENTOS
+        ========================== */
+
+        .testimonials {
+            background: #f7f9f8;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 30px;
+            border-radius: 22px;
+            box-shadow: 0 8px 30px rgba(0, 50, 30, .06);
+            border: 1px solid #e0e9e4;
+        }
+
+        .stars {
+            color: var(--gold);
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 22px;
+        }
+
+        .client {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .avatar {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: #e5f4ec;
+            display: grid;
+            place-items: center;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .client strong {
+            color: var(--secondary);
+            display: block;
+        }
+
+        .client small {
+            color: var(--text);
+        }
+
+        /* =========================
+           CONTATO
+        ========================== */
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 50px;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin: 12px 0 18px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            align-items: flex-start;
+        }
+
+        .contact-icon {
+            min-width: 45px;
+            height: 45px;
+            border-radius: 13px;
+            background: #e5f4ec;
+            color: var(--primary);
+            display: grid;
+            place-items: center;
+        }
+
+        .contact-item strong {
+            color: var(--secondary);
+            display: block;
+        }
+
+        .contact-form {
+            background: white;
+            padding: 35px;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            border: 1px solid #e2eae5;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            border: 1px solid #d5e0da;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-family: inherit;
+            outline: none;
+            transition: .3s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(0, 100, 55, .1);
+        }
+
+        textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+
+        /* =========================
+           CTA
+        ========================== */
+
+        .cta {
+            padding: 70px 0;
+            background:
+                linear-gradient(
+                    100deg,
+                    rgba(0, 100, 55, .98),
+                    rgba(0, 61, 35, .98)
+                );
+            color: white;
+        }
+
+        .cta-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .cta h2 {
+            color: white;
+            font-size: 2.4rem;
+        }
+
+        .cta p {
+            margin-top: 8px;
+            color: #dcefe5;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--primary-dark);
+            white-space: nowrap;
+        }
+
+        .btn-white:hover {
+            background: var(--gold-light);
+            color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            background: #04100a;
+            color: #aab9b1;
+            padding: 55px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 45px;
+        }
+
+        footer .logo {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        footer h3 {
+            color: white;
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin: 9px 0;
+        }
+
+        footer a {
+            color: #aab9b1;
+            transition: .3s;
+        }
+
+        footer a:hover {
+            color: #4caf78;
+        }
+
+        .copyright {
+            padding-top: 22px;
+            border-top: 1px solid rgba(255, 255, 255, .1);
+            text-align: center;
+            font-size: .85rem;
+        }
+
+        /* =========================
+           WHATSAPP
+        ========================== */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 62px;
+            height: 62px;
+            border-radius: 50%;
+            background: #25d366;
+            color: white;
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, .35);
+            z-index: 999;
+            transition: .3s;
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.08);
+        }
+
+        /* =========================
+           RESPONSIVO
+        ========================== */
+
+        @media (max-width: 900px) {
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .menu {
+                position: absolute;
+                top: 78px;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 25px;
+                gap: 20px;
+                box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+                display: none;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stat:nth-child(2) {
+                border-right: 0;
+            }
+
+            .stat {
+                margin: 10px 0;
+            }
+
+            .about-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            section {
+                padding: 75px 0;
+            }
+
+            .hero {
+                min-height: 90vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .stats {
+                margin-top: -30px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+                padding: 18px;
+            }
+
+            .stat strong {
+                font-size: 1.5rem;
+            }
+
+            .about-image img {
+                height: 380px;
+            }
+
+            .experience {
+                right: 10px;
+            }
+
+            .services-grid,
+            .testimonials-grid,
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 260px;
+            }
+
+            .gallery-item:first-child {
+                grid-row: auto;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================
+     MENU
+========================== -->
+
+<header>
+    <div class="container nav">
+
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">⚡</span>
+            VERDÃO STORE
+        </a>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu" id="menu">
+
+            <li><a href="#inicio">Início</a></li>
+
+            <li><a href="#sobre">Sobre</a></li>
+
+            <li><a href="#produtos">Produtos</a></li>
+
+            <li><a href="#galeria">Galeria</a></li>
+
+            <li><a href="#depoimentos">Clientes</a></li>
+
+            <li><a href="#contato">Contato</a></li>
+
+            <li>
+                <a
+                    class="btn btn-primary"
+                    href="https://wa.me/5546998887766"
+                    target="_blank">
+                    Comprar agora
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     HERO
+========================== -->
+
+<section class="hero" id="inicio">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <span class="tag">
+                🟢 AVANTI PALESTRA • AQUI É PALMEIRAS!
+            </span>
+
+            <h1>
+                Vista sua paixão.
+                <span>Viva o Palmeiras.</span>
+            </h1>
+
+            <p>
+                Na VERDÃO STORE você encontra camisas, roupas, calçados
+                e acessórios esportivos para carregar o orgulho alviverde
+                dentro e fora das arquibancadas.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#produtos" class="btn btn-primary">
+                    Ver produtos →
+                </a>
+
+                <a href="#contato" class="btn btn-outline">
+                    Fale conosco
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ESTATÍSTICAS
+========================== -->
+
+<div class="stats">
+
+    <div class="container">
+
+        <div class="stats-grid">
+
+            <div class="stat">
+                <strong>+1.000</strong>
+                <span>Torcedores atendidos</span>
+            </div>
+
+            <div class="stat">
+                <strong>+5</strong>
+                <span>Anos de experiência</span>
+            </div>
+
+            <div class="stat">
+                <strong>100%</strong>
+                <span>Paixão pelo Verdão</span>
+            </div>
+
+            <div class="stat">
+                <strong>5★</strong>
+                <span>Avaliação dos clientes</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     SOBRE
+========================== -->
+
+<section id="sobre">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image">
+
+                <img
+                    src="foto2.jpg"
+                    alt="Futebol e paixão pelo esporte">
+
+                <div class="experience">
+
+                    <strong>5+</strong>
+
+                    anos vestindo a paixão
+
+                </div>
+
+            </div>
+
+
+            <div class="about-text">
+
+                <span
+                    class="tag"
+                    style="color:#006437;background:#e5f4ec;border:0;">
+
+                    Sobre a VERDÃO STORE
+
+                </span>
+
+                <h2>
+                    Muito mais que uma loja. Uma paixão que atravessa gerações.
+                </h2>
+
+                <p>
+                    A VERDÃO STORE nasceu para os torcedores que carregam
+                    o Palmeiras no coração e querem demonstrar essa paixão
+                    em todos os momentos.
+                </p>
+
+                <p>
+                    Trabalhamos com produtos esportivos, roupas, acessórios
+                    e itens inspirados no universo alviverde, sempre buscando
+                    qualidade, conforto e estilo.
+                </p>
+
+                <ul class="checks">
+
+                    <li>Produtos selecionados para torcedores</li>
+
+                    <li>Camisas e roupas esportivas</li>
+
+                    <li>Acessórios para futebol e treino</li>
+
+                    <li>Atendimento especializado</li>
+
+                </ul>
+
+                <a href="#contato" class="btn btn-primary">
+                    Fale conosco
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PRODUTOS
+========================== -->
+
+<section class="services" id="produtos">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Nossos produtos</span>
+
+            <h2>
+                Tudo para quem vive o Palmeiras
+            </h2>
+
+            <p>
+                Produtos para acompanhar você nos jogos, treinos,
+                encontros com a torcida e no dia a dia.
+            </p>
+
+        </div>
+
+
+        <div class="services-grid">
+
+            <div class="service">
+
+                <div class="service-icon">👕</div>
+
+                <h3>Camisas do Verdão</h3>
+
+                <p>
+                    Camisas esportivas e modelos para você demonstrar
+                    seu orgulho pelo Palmeiras dentro e fora do estádio.
+                </p>
+
+                <a href="#contato">
+                    Ver opções →
+                </a>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">🧢</div>
+
+                <h3>Bonés e Acessórios</h3>
+
+                <p>
+                    Bonés, toucas, chaveiros, carteiras e acessórios
+                    para completar seu estilo alviverde.
+                </p>
+
+                <a href="#contato">
+                    Ver opções →
+                </a>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">👟</div>
+
+                <h3>Calçados Esportivos</h3>
+
+                <p>
+                    Tênis para corrida, academia, caminhada e diferentes
+                    atividades esportivas.
+                </p>
+
+                <a href="#contato">
+                    Ver opções →
+                </a>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">⚽</div>
+
+                <h3>Futebol</h3>
+
+                <p>
+                    Bolas, acessórios e produtos para quem não perde
+                    uma oportunidade de entrar em campo.
+                </p>
+
+                <a href="#contato">
+                    Ver opções →
+                </a>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">🎒</div>
+
+                <h3>Mochilas e Bolsas</h3>
+
+                <p>
+                    Mochilas e bolsas para levar seus equipamentos
+                    para os jogos, treinos e viagens.
+                </p>
+
+                <a href="#contato">
+                    Ver opções →
+                </a>
+
+            </div>
+
+
+            <div class="service">
+
+                <div class="service-icon">🏋️</div>
+
+                <h3>Fitness</h3>
+
+                <p>
+                    Acessórios para academia e treino para você
+                    manter o espírito de campeão todos os dias.
+                </p>
+
+                <a href="#contato">
+                    Ver opções →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALERIA
+========================== -->
+
+<section id="galeria">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>VERDÃO STORE</span>
+
+            <h2>
+                O orgulho de ser Palmeiras
+            </h2>
+
+            <p>
+                Futebol, paixão, tradição e estilo em um só lugar.
+            </p>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+
+                <img
+                    src="foto3.jpeg"
+                    alt="Futebol">
+
+                <span class="gallery-caption">
+                    Paixão pelo futebol
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="foto4.avif"
+                    alt="Corrida">
+
+                <span class="gallery-caption">
+                    Performance
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="foto5.jpeg"
+                    alt="Treino">
+
+                <span class="gallery-caption">
+                    Treino
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="foto6.jpeg"
+                    alt="Equipamentos esportivos">
+
+                <span class="gallery-caption">
+                    Equipamentos
+                </span>
+
+            </div>
+
+
+            <div class="gallery-item">
+
+                <img
+                    src="foto7.webp"
+                    alt="Academia">
+
+                <span class="gallery-caption">
+                    Fitness
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DIFERENCIAIS
+========================== -->
+
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Por que escolher a VERDÃO STORE?</span>
+
+            <h2>
+                Mais que produtos. Uma experiência para quem ama o Verdão.
+            </h2>
+
+            <p>
+                Qualidade, estilo e paixão em cada produto.
+            </p>
+
+        </div>
+
+
+        <div class="features-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🟢
+                </div>
+
+                <h3>
+                    Identidade Alviverde
+                </h3>
+
+                <p>
+                    Produtos pensados para quem carrega
+                    o Palmeiras no coração.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    🛡️
+                </div>
+
+                <h3>
+                    Qualidade
+                </h3>
+
+                <p>
+                    Produtos selecionados buscando conforto,
+                    durabilidade e estilo.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ⭐
+                </div>
+
+                <h3>
+                    Estilo
+                </h3>
+
+                <p>
+                    Vista suas cores e mostre sua paixão
+                    dentro e fora do estádio.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    💬
+                </div>
+
+                <h3>
+                    Atendimento
+                </h3>
+
+                <p>
+                    Nossa equipe está pronta para ajudar
+                    você a encontrar o produto ideal.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DEPOIMENTOS
+========================== -->
+
+<section class="testimonials" id="depoimentos">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>Torcedores</span>
+
+            <h2>
+                O que nossos clientes dizem
+            </h2>
+
+            <p>
+                Quem compra na VERDÃO STORE compartilha a experiência.
+            </p>
+
+        </div>
+
+
+        <div class="testimonials-grid">
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Sou palmeirense desde criança e adorei a loja.
+                    Encontrei produtos úteis para o dia a dia e o atendimento
+                    foi excelente!"
+                </p>
+
+                <div class="client">
+
+                    <div class="avatar">
+                        M
+                    </div>
+
+                    <div>
+                        <strong>
+                            Marcos S.
+                        </strong>
+
+                        <small>
+                            Torcedor
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Comprei uma camisa e alguns acessórios.
+                    Produtos de ótima qualidade. Agora é só esperar
+                    o próximo jogo!"
+                </p>
+
+                <div class="client">
+
+                    <div class="avatar">
+                        R
+                    </div>
+
+                    <div>
+                        <strong>
+                            Rafael A.
+                        </strong>
+
+                        <small>
+                            Torcedor
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="testimonial">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Excelente atendimento e muita variedade.
+                    Para quem é apaixonado pelo Verdão, vale muito a pena!"
+                </p>
+
+                <div class="client">
+
+                    <div class="avatar">
+                        C
+                    </div>
+
+                    <div>
+                        <strong>
+                            Camila P.
+                        </strong>
+
+                        <small>
+                            Torcedora
+                        </small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <div>
+
+                <h2>
+                    Pronto para vestir o Verdão?
+                </h2>
+
+                <p>
+                    Encontre seu próximo produto e carregue
+                    o orgulho palmeirense com você.
+                </p>
+
+            </div>
+
+            <a
+                href="https://wa.me/5546998877665"
+                target="_blank"
+                class="btn btn-white">
+
+                💬 Falar pelo WhatsApp
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTATO
+========================== -->
+
+<section id="contato">
+
+    <div class="container">
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <span
+                    class="tag"
+                    style="color:#006437;background:#e5f4ec;border:0;">
+
+                    Contato
+
+                </span>
+
+                <h2>
+                    Encontre seu próximo produto do Verdão.
+                </h2>
+
+                <p>
+                    Preencha o formulário ou fale diretamente conosco.
+                    Nossa equipe está pronta para ajudar você.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📱
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            WhatsApp
+                        </strong>
+
+                        (46) 99887-7665
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            E-mail
+                        </strong>
+
+                        contato@verdaostore.com.br
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+
+                        <strong>
+                            Localização
+                        </strong>
+
+                        São Paulo - SP
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form
+                class="contact-form"
+                id="formContato">
+
+                <h3 style="font-size:1.5rem;margin-bottom:20px;">
+                    Fale com a VERDÃO STORE
+                </h3>
+
+                <div class="form-row">
+
+                    <input
+                        type="text"
+                        placeholder="Seu nome"
+                        required>
+
+                    <input
+                        type="tel"
+                        placeholder="Seu telefone"
+                        required>
+
+                </div>
+
+
+                <input
+                    type="email"
+                    placeholder="Seu e-mail">
+
+
+                <select required>
+
+                    <option value="">
+                        O que você procura?
+                    </option>
+
+                    <option>
+                        Camisa do Palmeiras
+                    </option>
+
+                    <option>
+                        Roupas
+                    </option>
+
+                    <option>
+                        Bonés e acessórios
+                    </option>
+
+                    <option>
+                        Calçados
+                    </option>
+
+                    <option>
+                        Futebol
+                    </option>
+
+                    <option>
+                        Mochilas e bolsas
+                    </option>
+
+                    <option>
+                        Fitness
+                    </option>
+
+                    <option>
+                        Outro produto
+                    </option>
+
+                </select>
+
+
+                <textarea
+                    placeholder="Conte qual produto você está procurando..."></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="width:100%;">
+
+                    Solicitar atendimento
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <a href="#inicio" class="logo">
+
+                    <span class="logo-icon">
+                        ⚡
+                    </span>
+
+                    VERDÃO STORE
+
+                </a>
+
+                <p>
+                    Artigos esportivos para quem vive,
+                    respira e veste o Palmeiras.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Menu
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#inicio">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#sobre">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">
+                            Produtos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#galeria">
+                            Galeria
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Produtos
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#produtos">
+                            Camisas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">
+                            Roupas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">
+                            Acessórios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#produtos">
+                            Futebol
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Contato
+                </h3>
+
+                <ul>
+
+                    <li>
+                        (46) 99887-7665
+                    </li>
+
+                    <li>
+                        contato@verdaostore.com.br
+                    </li>
+
+                    <li>
+                        São Paulo - SP
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 VERDÃO STORE. Todos os direitos reservados.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP
+========================== -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/5546998877665"
+    target="_blank"
+    aria-label="Falar com a VERDÃO STORE">
+
+    💬
+
+</a>
+
+
+<script>
+
+    /* =========================
+       MENU MOBILE
+    ========================== */
+
+    function toggleMenu() {
+
+        document
+            .getElementById("menu")
+            .classList
+            .toggle("active");
+
+    }
+
+
+    /* =========================
+       FECHAR MENU AO CLICAR
+    ========================== */
+
+    document
+        .querySelectorAll(".menu a")
+        .forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                document
+                    .getElementById("menu")
+                    .classList
+                    .remove("active");
+
+            });
+
+        });
+
+
+    /* =========================
+       FORMULÁRIO
+    ========================== */
+
+    document
+        .getElementById("formContato")
+        .addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Obrigado pelo contato! " +
+                "Sua solicitação foi recebida pela VERDÃO STORE. " +
+                "Avanti Palestra!"
+            );
+
+            this.reset();
+
+        });
+
+</script>
+
+</body>
+</html>
